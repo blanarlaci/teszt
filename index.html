@@ -5,11 +5,24 @@
 </head>
 <body>
     <div class="container">
+    <div class="calculator-card">
+        <div class="header-controls">
+            <span id="udvozles"></span>
+            <button class="dark-toggle" onclick="darkMode()">🌙 / ☀️</button>
+        </div>
         <h1>Hány éves vagy?</h1>
-        <input type="number" id="szuletesiEv" placeholder="Születési éved (pl. 1990)">
-        <button onclick="szamolas()">Számolj!</button>
+        <input type="number" id="szuletesiEv" placeholder="Születési éved">
+        <button class="action-btn" onclick="szamolas()">Számolj!</button>
         <p id="eredmeny"></p>
     </div>
+
+    <div class="calculator-card">
+        <h3>Bérkalkulátor (Nettó)</h3>
+        <input type="number" id="bruttoBer" placeholder="Bruttó bér (Ft)">
+        <button class="action-btn" onclick="berSzamolas()">Mennyi marad?</button>
+        <p id="berEredmeny"></p>
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
